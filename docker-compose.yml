@@ -1,0 +1,9 @@
+services:
+  ia004:
+    build: .
+    ports:
+      - "8080:5000"
+    environment:
+      - ROS_DOMAIN_ID=0
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
